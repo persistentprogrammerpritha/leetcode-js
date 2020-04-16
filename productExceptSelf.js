@@ -10,8 +10,6 @@ var productExceptSelf = function(nums) {
     for(var i=1; i<nums.length; i++){
         ans[i] = ans[i-1] * nums[i-1]; //1234 -> 1126
     }
-    // console.log(ans);
-    var rightProduct = 1;
     for(var i=nums.length-1; i>=0; i--){ //1234 -> 24,12,4,1 -> rightProduct
         ans[i] = ans[i] * rightProduct;
         rightProduct *= nums[i]; 
