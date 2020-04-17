@@ -11,7 +11,7 @@ var productExceptSelf = function(nums) {
         ans[i] = ans[i-1] * nums[i-1]; //1234 -> 1126
     }
     for(var i=nums.length-1; i>=0; i--){ //1234 -> 24,12,4,1 -> rightProduct
-        ans[i] = ans[i] * rightProduct;
+        ans[i] *= rightProduct;
         rightProduct *= nums[i]; 
     }
     return ans;
