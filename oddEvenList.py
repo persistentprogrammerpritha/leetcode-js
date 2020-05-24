@@ -4,6 +4,7 @@
 #         self.val = val
 #         self.next = next
 class Solution:
+    #move this to other repo
     def oddEvenList(self, head: ListNode) -> ListNode:
         if head == None: 
             return None
